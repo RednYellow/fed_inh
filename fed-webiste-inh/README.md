@@ -54,9 +54,24 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 <details>
   <summary>uitwerken na test in 1e werkgroep</summary>
+Ik test samen met een klasgenoot de toegangkelijkheid van zijn gekozen website: https://www.livefromearth.shop/
 
+  
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+  
+  -Voice over-
+  Bevinding 1: De homepagina van de website bevat geen headings. Deze staan niet als optie in de Rotor.
+  Bevinding 2: Op de homepagina zijn de linkjes vrij duidelijk. Vooral omdat (bijna) alle content hierop linkjes zijn.
+  Bevinding 3: De links zijn ook de titels.
+  
+  -Toetsenbord & muis-
+  Bevinding 1: De tab gaat wel logisch door alle elementen heen. Maar je kunt niet zien op welke element je zit.
+  Bevinding 2: Bij de producten pagina is het niet alleen dat je niet de tab selecgie ziet. Maar de volgorde van de tab navigatie gaat is niet logisch. Het is ook ondeuidelijk waar het begint en eindigt.
+  
+  -Kle
+  
+  
 
   #### Screenreader
   Hier korte omschrijving (met indien nodig afbeeldingen)
