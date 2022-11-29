@@ -69,9 +69,12 @@ Ik test samen met een klasgenoot de toegangkelijkheid van zijn gekozen website: 
   Bevinding 1: De tab gaat wel logisch door alle elementen heen. Maar je kunt niet zien op welke element je zit.
   Bevinding 2: Bij de producten pagina is het niet alleen dat je niet de tab selecgie ziet. Maar de volgorde van de tab navigatie gaat is niet logisch. Het is ook ondeuidelijk waar het begint en eindigt.
   
-  -Kle
+  -Kleuren
   
   
+  
+  Mijn klasgenoot heeft de toegangkelijkheid van mijn gekozen website getest tijdens deze sessie (https://www.campina.nl/).
+  Hij heeft de volgende anotaties gemaakt
 
   #### Screenreader
   Hier korte omschrijving (met indien nodig afbeeldingen)
