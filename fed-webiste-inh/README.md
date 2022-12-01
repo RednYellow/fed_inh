@@ -130,7 +130,12 @@ Ik test samen met een klasgenoot de toegangkelijkheid van zijn gekozen website: 
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Het begrijpen van de Flexbox en Grid was beter gegaan dan het toepassen in de oefeningen. Het meest wat opviel is dat blijven oefenen en herhalen van bepaalde code goed helpt om het onder de knie te krijgen.
+  
+  Grootste frustratie: Ik moet vaker spieken naar HTML code (en ook CSS) om zeker te weten dat ik de goede kant op ga tijden het coderen.
+  Grootste Sterkte punt: Ik heb meer zin om het teleren dan een jaar(of twee jaar) terug. 
 
+  
 
   ### Agenda voor meeting
   samen met je groepje opstellen
@@ -141,6 +146,10 @@ Ik test samen met een klasgenoot de toegangkelijkheid van zijn gekozen website: 
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
 
+  - Breakdown schets besprek (checken of alles goed is).
+  - Vragen over Burgermenu (correcte html en style)
+  - Wat is een goede opzet voor mijn code.
+  - Algemeen welke code mag ik niet gebruiken.
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
