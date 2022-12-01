@@ -54,27 +54,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 <details>
   <summary>uitwerken na test in 1e werkgroep</summary>
-Ik test samen met een klasgenoot de toegangkelijkheid van zijn gekozen website: https://www.livefromearth.shop/
 
-  
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
-  
-  -Voice over-
-  Bevinding 1: De homepagina van de website bevat geen headings. Deze staan niet als optie in de Rotor.
-  Bevinding 2: Op de homepagina zijn de linkjes vrij duidelijk. Vooral omdat (bijna) alle content hierop linkjes zijn.
-  Bevinding 3: De links zijn ook de titels.
-  
-  -Toetsenbord & muis-
-  Bevinding 1: De tab gaat wel logisch door alle elementen heen. Maar je kunt niet zien op welke element je zit.
-  Bevinding 2: Bij de producten pagina is het niet alleen dat je niet de tab selecgie ziet. Maar de volgorde van de tab navigatie gaat is niet logisch. Het is ook ondeuidelijk waar het begint en eindigt.
-  
-  -Kleuren
-  
-  
-  
-  Mijn klasgenoot heeft de toegangkelijkheid van mijn gekozen website getest tijdens deze sessie (https://www.campina.nl/).
-  Hij heeft de volgende anotaties gemaakt
 
   #### Screenreader
   Hier korte omschrijving (met indien nodig afbeeldingen)
@@ -130,12 +112,7 @@ Ik test samen met een klasgenoot de toegangkelijkheid van zijn gekozen website: 
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-  Het begrijpen van de Flexbox en Grid was beter gegaan dan het toepassen in de oefeningen. Het meest wat opviel is dat blijven oefenen en herhalen van bepaalde code goed helpt om het onder de knie te krijgen.
-  
-  Grootste frustratie: Ik moet vaker spieken naar HTML code (en ook CSS) om zeker te weten dat ik de goede kant op ga tijden het coderen.
-  Grootste Sterkte punt: Ik heb meer zin om het teleren dan een jaar(of twee jaar) terug. 
 
-  
 
   ### Agenda voor meeting
   samen met je groepje opstellen
@@ -146,10 +123,6 @@ Ik test samen met een klasgenoot de toegangkelijkheid van zijn gekozen website: 
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
 
-  - Breakdown schets besprek (checken of alles goed is).
-  - Vragen over Burgermenu (correcte html en style)
-  - Wat is een goede opzet voor mijn code.
-  - Algemeen welke code mag ik niet gebruiken.
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
