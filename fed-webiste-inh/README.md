@@ -56,16 +56,60 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 1e werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen:
+  Lijst met je bevindingen (Website van klasgenoot Kenneth) die in de test naar voren kwamen:
+
+  Bevinding 1: De homepagina van de website bevat geen headings. Deze staan niet als optie in de Rotor.
+  Bevinding 2: Op de homepagina zijn de linkjes vrij duidelijk. Vooral omdat (bijna) alle content hierop linkjes zijn.
+  Bevinding 3: De links zijn ook de titels.
 
   #### Screenreader
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+  Door middel van de rotor kun je selecteren op welk onderdeel je wilt zoeken met de voice over (FOTO ROTOR google)
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+
+
+Screenreader heading:
+
+Geeft aan of het h1,h2, h3 of h4 is
+
+Op Campina home is de menu banner h2
+
+H3 zijn de kopjes in de footer.
+
+Geeft aan dat je op de laatste heading bent als je helemaal naar beneden scrollt
+
+
+
+Screanreader links:
+
+Veel links op de pagina van Campina. Interessante is dat die zelfs door de links in de dropdown van de menu items heengaat, deze zijn niet zichtbaar tenzij je over de menu items hoverd. Apart maar dit kan voor een blinde denk ik wel handig zijn om te zien wat er allemaal in de navigatie zit.
+
+Geeft aan dat dat ‘first link’ in de UPS bar zit.
 
 
   #### Muis en Toetsenbord 
   Hier korte omschrijving (met indien nodig afbeeldingen)
+
+Bediening:
+
+Kan alleen door de site navigeren door te tabben en dit gaat alleen naar beneden. Het is dus niet mogelijk op met de pijltjes naar links en rechts te navigeren.
+
+Door de pijltjes te gebruiken of spatie kun je scrollen op de pagina.
+
+
+
+Volgorde:
+
+De volgorde gaat door de lists heen. In de footer gaat dat van boven naar beneden
+
+Op de producten pagina gaat de volgorde door de list heen wel horizontaal.
+
+Ook ga je door deze manier van navigeren weer door alle submenu items die niet zichtbaar zijn.
+
+
+
+State:
+
+Active state word getoond als iets geselecteerd is dmv te tabben. Hover en focus niet.
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
 
@@ -78,6 +122,18 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
   Hier korte omschrijving (met indien nodig afbeeldingen)
+
+Kleuren:
+
+De Campina branding (groene kleur) komt niet terug bij verschillende soorten van kleurenblindheid maar alle elementen zijn nog wel te zien en te begrijpen
+
+(FOTOx2)
+
+
+
+Dark/light-mode:
+
+Er is geen dark-mode beschikbaar vanuit de browser en er is ook geen toggle om dark-mode aan te zetten op de website zelf.
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
 
@@ -117,11 +173,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+ Clubje B1
+  | Deveney      
+  | Redouane         
+  | Melvin
+  
+ Punten die we hebben besproken:
+ - Vragen over het Hamburger-menu (hoe en in welke volgorde coderen...etc.)
+ - 
 
 
   ### Verslag van meeting
@@ -220,7 +279,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
+  | Redouane      | Deveney          | Melvin    | Diem        |
   | ---            | ---                | ---          | ---              |
   | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
