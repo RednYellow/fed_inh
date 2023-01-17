@@ -1,0 +1,376 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+/* @import url('https://fonts.cdnfonts.com/css/grota-sans-alt'); */
+
+@font-face {
+	font-family: Futura Pasatta;
+	src: url('../fonts/futurapassata-bold.woff2');
+  }
+  @font-face {
+	font-family: Grota sans;
+	src: url('../fonts/grotasans-regular.woff2');
+  }
+
+*, *::after, *::before {
+  box-sizing:border-box;
+  text-decoration: none;  
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+button, summary {
+	cursor: pointer;
+}
+
+
+
+
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	/* startje */
+	--color-text:#111;
+	--color-background:#eee;
+	--footer-background-color: #78b433;
+	--footer-text-color: #2f3539;
+}
+
+
+
+
+
+/****************/
+/* JOUW STYLING */
+/****************/
+
+.menu-button {
+    display: block;
+    cursor: pointer;
+  }
+
+  /* Show the menu when the menu button is clicked */
+  .menu-button:focus + nav {
+    display: block;
+  }
+
+
+header section{
+
+	background-color: var(--footer-background-color);
+	width: 100%;
+	padding: 1.5em;
+	position: relative;
+}
+
+header section button {
+	background-color: darkorange;
+	padding: 0.7em;
+	margin: 0.2em;
+	border-radius: 5em;
+	border: none;
+	position: absolute;
+	right: 2em;
+	top: 0.3em;
+	color: white;
+	font-family: Arial , Helvetica, sans-serif;
+	font-weight: 700;
+	text-shadow: #111;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+	margin: 0 3em;
+  }
+
+  #top-page {
+
+	background-color: var(--footer-background-color);
+	width: 100%;
+	padding: 1.5em;
+	position: relative;
+}
+
+#top-page button {
+	background-color: darkorange;
+	padding: 0.7em;
+	margin: 0.2em;
+	border-radius: 5em;
+	border: none;
+	position: absolute;
+	right: 2em;
+	top: 0.3em;
+	color: white;
+	font-family: Arial , Helvetica, sans-serif;
+	font-weight: 700;
+	text-shadow: #111;
+}
+  
+  .logo img {
+    width: 6em;
+	height: 6em;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  nav ul li a {
+    padding: 1em;
+    text-decoration: none;
+    color: #333;
+	text-transform: uppercase;
+	font-family: Futura Pasatta, Arial, Helvetica, sans-serif;
+	transition: .2s;
+	font-size: large;
+  }
+
+  nav ul li a:hover {
+    padding: 1em;
+    text-decoration: none;
+    color: rgb(22, 104, 22);
+	font-family: Futura Pasatta, Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	text-decoration: underline;
+  }
+  
+  form {
+    display: flex;
+    align-items: center;
+  }
+  
+  form input {
+    padding: 0.6em;
+    border-radius: 0.5em 0 0 0.5em;
+    border: gray solid 0.1em;
+    outline: none;
+  }
+  
+  form button {
+    padding: 10px;
+    border-radius: 0 5px 5px 0;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  /* Header - Mobile */
+
+  @media screen and (max-width: 768px) {
+    /* hide the nav menu and show the hamburger menu icon */
+    nav ul {
+      display: none;
+    }
+    .hamburger-menu {
+      display: block;
+    }
+    /* center the logo and search form */
+    .logo, form {
+      display: block;
+      text-align: center;
+    }
+    /* adjust the padding for smaller screens */
+    header {
+      padding: 10px;
+    }
+
+
+    nav ul.open {
+        display: flex;
+    }
+  }
+
+
+.banner{
+width:100%;
+height:auto;
+}
+
+.banner2{
+	width:100%;
+	height:auto;
+	}
+
+/* Main - homepage (te veel code) */
+
+/* main section{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+main section {
+	margin: 2em;
+}
+
+main iframe {
+	max-width: 70%;
+}
+
+main a {
+	margin: 2em;
+} */
+
+
+
+
+/* main - homepage (minder code) */
+
+main section iframe, section img {
+    width: 100%;
+    height: auto;
+}
+
+main section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+section iframe, section img {
+    width: 100%;
+    height: auto;
+    flex-basis: 50%;
+	margin: 2em;
+}
+
+@media (min-width: 48em) {
+    section iframe, section img {
+        flex-basis: calc(50% - 1em);
+		margin: 2em;
+	}
+	}
+
+
+
+
+
+footer {
+	display: flex;
+	flex-wrap: wrap;
+	
+}
+
+
+.grid-container{
+	margin: 0 4em;
+}
+
+footer section{
+	display: block;
+	min-width: 20em;
+}
+
+footer h3 {
+	font-size: 1.5em;
+	padding: 1em;
+	text-transform: uppercase;
+	font-family: Futura Pasatta, Arial, Helvetica, sans-serif;
+	color: var(--footer-text-color);
+}
+
+footer section ul{
+font-size: 1.1em;
+padding: 0 1em;
+font-family: Grota sans;
+
+}
+
+footer section li{
+	padding: 0.5em;
+	color: var(--footer-text-color);
+
+}
+
+footer section li:hover{
+	text-decoration: underline;
+
+}
+
+footer section p {
+	font-family: Grota sans;
+	font-size: 1.1em;
+	line-height: 1.7em;
+	color: var(--footer-text-color);
+	padding: 0 1.5em;
+}
+
+footer a li:focus {
+	background-color: darkorange;
+}
+
+footer a li:active {
+	color: var(--color-background);
+	font-weight: bold;
+}
+
+
+footer {
+	
+	background-color: var(--footer-background-color);
+}
+
+
+
+
+
+
+
+@media (min-width: 62em) {
+
+	footer .grid-container {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		width: 100%;
+	  }
+	
+	  footer .the-end {
+width: 100%;
+background-color: white;
+display:flex;
+justify-content: space-between;
+
+	  }
+	 
+	  footer .the-end ul {
+		display: flex;
+		flex-direction: row;
+		margin: 2em 0;
+		padding: 0 3em;
+	
+
+	  }
+
+	  footer .the-end li {
+		border-right: 0.05em solid gray;
+	  }
+
+	
+	  .the-end article:nth-of-type(2){
+		display: flex;
+		flex-direction: row;
+		margin: 2em 0;
+		position: relative;
+	  }
+
+.the-end p {
+	position: absolute;
+	left: -10em;
+}
+
+.the-end img{
+
+	height: 70%;
+	width: 70%;
+}
+
+}

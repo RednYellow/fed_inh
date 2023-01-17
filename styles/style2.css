@@ -1,0 +1,514 @@
+
+@font-face {
+	font-family: Futura Pasatta;
+	src: url('../fonts/futurapassata-bold.woff2');
+  }
+  @font-face {
+	font-family: Grota sans;
+	src: url('../fonts/grotasans-regular.woff2');
+  }
+
+  *, *::after, *::before {
+	box-sizing:border-box;
+	text-decoration: none;  
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+  }
+  
+  button, summary {
+	  cursor: pointer;
+  }
+  
+  
+  /*********************/
+  /* CUSTOM PROPERTIES */
+  /*********************/
+  :root {
+	  /* startje */
+	  --color-text:#111;
+	  --color-background:#eee;
+	  --footer-background-color: #78b433;
+	  --footer-text-color: #2f3539;
+	  --campina-green: #78b433;
+	  --button-background-color: #dcf8ad;
+	  --product-box-border: rgba(0,0,0,0.15);
+	  --product-box-hover: rgba(0,0,0,0.3);
+	  --product-supermarket-hover: lightyellow;
+	  --page-title-color: #333;
+  }
+
+/* Header - dektop */
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+
+  #top-page {
+
+	background-color: var(--footer-background-color);
+	width: 100%;
+	padding: 1.5em;
+	position: relative;
+}
+
+#top-page button {
+	background-color: darkorange;
+	padding: 0.7em;
+	margin: 0.2em;
+	border-radius: 5em;
+	border: none;
+	position: absolute;
+	right: 2em;
+	top: 0.3em;
+	color: white;
+	font-family: Arial , Helvetica, sans-serif;
+	font-weight: 700;
+	text-shadow: #111;
+}
+  
+  .logo img {
+    width: 6em;
+	height: 6em;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  nav ul li a {
+    padding: 1em;
+    text-decoration: none;
+    color: #333;
+	text-transform: uppercase;
+	font-family: Futura Pasatta;
+  }
+  
+  form {
+    display: flex;
+    align-items: center;
+  }
+  
+  form input {
+    padding: 0.6em;
+    border-radius: 0.5em 0 0 0.5em;
+    border: gray solid 0.1em;
+    outline: none;
+  }
+  
+  form button {
+    padding: 10px;
+    border-radius: 0 5px 5px 0;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  /* Header - Mobile */
+
+  @media screen and (max-width: 768px) {
+    /* hide the nav menu and show the hamburger menu icon */
+    nav ul {
+      display: none;
+    }
+    .hamburger-menu {
+      display: block;
+    }
+    /* center the logo and search form */
+    .logo, form {
+      display: block;
+      text-align: center;
+    }
+    /* adjust the padding for smaller screens */
+    header {
+      padding: 10px;
+    }
+
+
+    nav ul.open {
+        display: flex;
+    }
+  }
+
+
+
+
+
+#menu {
+  position: absolute;
+  top: 50px;
+  left: -200px;
+  width: 200px;
+  height: 100%;
+  background: white;
+  transition: left 0.5s;
+}
+
+#menu.active {
+  left: 0;
+}
+
+#menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#menu li {
+  border-bottom: 1px solid #ccc;
+}
+
+#menu a {
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+#producten {
+  font-family: Futura Pasatta;
+  font-size: 4em;
+  color: #2b2929;
+  display: flex;
+  justify-content: center;
+  margin: 0.5em 0.1em 0.2em 0.1em;
+}
+
+#filter {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0.5em;
+  margin: 0em;
+}
+
+#filter li {
+  margin: 0.5em;
+  padding: 0.5em 1em;
+  font-family: Grota sans;
+  font-size: larger;
+  color: var(--campina-green);
+  border: 0.1em solid var(--campina-green);
+  border-radius: 5em;
+  transition: 0.2s;
+}
+
+#filter li:hover {
+  margin: 0.5em;
+  padding: 0.5em 1em;
+  font-family: Grota sans;
+  font-size: larger;
+  font-weight: bolder;
+  color: green;
+  background-color: #e9f7c3;
+  border: 0.1em solid green;
+  border-radius: 5em;
+}
+
+
+main section:nth-of-type(1) > ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* pak melk container */
+main section:nth-of-type(1) > ul > li {
+	display:grid;
+
+	overflow:hidden;
+
+	box-shadow: 0 1px 2px var(--product-box-border);
+	transition: box-shadow 0.3s ease-in-out;
+  	margin: 2em;
+}
+
+main section:nth-of-type(1) > ul > li:hover {
+	display:grid;
+
+	overflow:hidden;
+
+	box-shadow: 0 5px 15px var(--product-box-hover);
+  	margin: 2em;
+}
+
+/* pak melk titel  */
+main section:nth-of-type(1) > ul > li > h3 {
+	position:relative;
+	z-index:100;
+	grid-column-start:1;
+	grid-row-start:1;
+	font-family: Futura Pasatta;
+  color: #78b433;
+	align-self:end;
+	
+
+	margin:0;
+	padding: 2em 1em 3em 1em;
+	
+	text-align:center;
+	
+	border-radius: 40% 60% 0 0 / 40% 55% 0 0;
+	
+	transform:translateY(1.5em);
+	
+	transition:.5s;
+}
+
+main section:nth-of-type(1) > ul > li:hover > h3 {
+	transform:translateY(0em);
+		background-color: var(--product-supermarket-hover);
+    color: orange;
+}
+
+/* pak melk plaatje */
+main section:nth-of-type(1) > ul > li > img{
+	width:100%;
+	grid-column-start:1;
+	grid-row-start:1;
+
+}
+	
+/* merken links */
+main section:nth-of-type(1) > ul ul {
+	position:relative;
+	z-index:200;
+	margin:0;
+	padding:0;
+	list-style:none;
+	
+	display:flex;
+	gap:.5em;
+	justify-content:center;
+	
+	grid-column-start:1;
+	grid-row-start:1;
+	
+	align-self:end;
+	
+	padding:1em;
+	
+	transform:translateY(3em);
+	
+	transition:.5s;
+}
+
+main section:nth-of-type(1) > ul > li:hover ul {
+	transform:translateY(0);
+	
+	transition-delay:.2s;
+}
+
+main section:nth-of-type(1) > ul ul img {
+	width:2em;
+	display:block;
+}
+
+
+
+
+
+/* .producten-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  
+}
+
+.producten-container > section {
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  transition: box-shadow 0.3s ease-in-out;
+  margin: 2em;
+}
+
+.producten-container > section:hover {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  margin: 2em;
+}
+
+
+
+.producten-container > section > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position:relative;
+  overflow: hidden;
+} */
+
+
+
+footer{
+	display: flex;
+	flex-wrap: wrap;
+	
+}
+
+
+footer section{
+	display: block;
+	min-width: 20em;
+}
+
+footer h3 {
+	font-size: 1.5em;
+	padding: 1em;
+	text-transform: uppercase;
+	font-family: Futura Pasatta, Arial, Helvetica, sans-serif;
+	color: var(--footer-text-color);
+}
+
+footer section ul{
+font-size: 1.1em;
+padding: 0 1em;
+font-family: Grota sans;
+
+}
+
+footer section li{
+	padding: 0.5em;
+	color: var(--footer-text-color);
+
+}
+
+footer section li:hover{
+	text-decoration: underline;
+
+}
+
+footer section p {
+	font-family: Grota sans;
+	font-size: 1.1em;
+	line-height: 1.7em;
+	color: var(--footer-text-color);
+	padding: 0 1.5em;
+}
+
+footer a li:focus {
+	background-color: darkorange;
+}
+
+footer a li:active {
+	color: var(--color-background);
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+	
+	background-color: var(--footer-background-color);
+}
+
+
+@media (min-width: 62em) {
+
+	footer .grid-container {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		width: 100%;
+	  }
+	
+	  footer .the-end {
+width: 100%;
+background-color: white;
+display:flex;
+justify-content: space-between;
+
+	  }
+	 
+	  footer .the-end ul {
+		display: flex;
+		flex-direction: row;
+		margin: 2em 0;
+		padding: 0 3em;
+	
+
+	  }
+
+	  footer .the-end li {
+		border-right: 0.05em solid gray;
+	  }
+
+	
+	  .the-end article:nth-of-type(2){
+		display: flex;
+		flex-direction: row;
+		margin: 2em 0;
+		position: relative;
+	  }
+
+.the-end p {
+	position: absolute;
+	left: -10em;
+}
+
+.the-end img{
+
+	height: 70%;
+	width: 70%;
+}
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+  #menu-icon {
+    display: block;
+  }
+  #menu {
+    position: static;
+    width: 100%;
+    height: auto;
+    background: none;
+    transition: none;
+  }
+  #menu.active {
+    left: -200px;
+  }
+}
