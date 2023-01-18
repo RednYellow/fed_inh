@@ -40,11 +40,17 @@
 
 /* Header - dektop */
 
+
   header {
+	z-index:300;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 20px;
+    padding: 0em;
+	margin: 0;
+	position: sticky;
+	top: 0em;
+	background-color: white;
   }
 
   #top-page {
@@ -86,6 +92,17 @@
     color: #333;
 	text-transform: uppercase;
 	font-family: Futura Pasatta;
+  font-size: large;
+  transition: .2s;
+  }
+
+  nav ul li a:hover {
+  padding: 1em;
+  text-decoration: none;
+  color: rgb(22, 104, 22);
+	font-family: Futura Pasatta, Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	text-decoration: underline;
   }
   
   form {
@@ -94,10 +111,11 @@
   }
   
   form input {
-    padding: 0.6em;
-    border-radius: 0.5em 0 0 0.5em;
+    padding: 0.6em 1em;
+    border-radius: 0.5em;
     border: gray solid 0.1em;
     outline: none;
+    font-family: Futura Pasatta;
   }
   
   form button {
@@ -111,7 +129,7 @@
 
   /* Header - Mobile */
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 62em) {
     /* hide the nav menu and show the hamburger menu icon */
     nav ul {
       display: none;
@@ -126,7 +144,9 @@
     }
     /* adjust the padding for smaller screens */
     header {
-      padding: 10px;
+      padding: 1em;
+	  display: flex;
+	  justify-content: space-between;
     }
 
 
@@ -273,7 +293,7 @@ main section:nth-of-type(1) > ul > li:hover > h3 {
 /* pak melk plaatje */
 main section:nth-of-type(1) > ul > li > img{
 	width:100%;
-	grid-column-start:1;
+	 grid-column-start:1;
 	grid-row-start:1;
 
 }
@@ -347,16 +367,18 @@ main section:nth-of-type(1) > ul ul img {
 
 
 
-footer{
+footer {
 	display: flex;
 	flex-wrap: wrap;
-	
+	margin: 0;
+	grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+	background-color: var(--footer-background-color);
 }
 
-
-footer section{
+footer section {
 	display: block;
-	min-width: 20em;
+	min-width: 18em;
+
 }
 
 footer h3 {
@@ -377,12 +399,17 @@ font-family: Grota sans;
 footer section li{
 	padding: 0.5em;
 	color: var(--footer-text-color);
+  transition: 0.2s;
 
 }
 
 footer section li:hover{
 	text-decoration: underline;
 
+}
+
+footer section:last-of-type li:hover{
+	color: var(--footer-background-color);
 }
 
 footer section p {
@@ -402,66 +429,68 @@ footer a li:active {
 	font-weight: bold;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-footer {
-	
-	background-color: var(--footer-background-color);
+footer section:last-of-type {
+	width: 100%;
+	background-color: white;
+	display:flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 
-@media (min-width: 62em) {
+footer section:last-of-type article:nth-of-type(1){
+margin: 1em 0;
+padding: 1em 0;
+align-self: flex-start;
+
+}
+
+
+footer section:last-of-type span {
+	margin: 0 0 1em 0;
+	background-color: gray;
+	width: 92%;
+	height: 0.08em;
+}
+
+footer section:last-of-type article:nth-of-type(2){
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 1.5em 0;
+	
+}
+
+
+footer section:last-of-type img{
+
+	height: 70%;
+	width: 70%;
+}
+
+
+ @media (min-width: 62em) {
 
 	footer .grid-container {
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
 		width: 100%;
 	  }
-	
-	  footer .the-end {
+
+
+
+	  	
+	  footer section:last-of-type {
 width: 100%;
 background-color: white;
 display:flex;
+flex-direction: row;
 justify-content: space-between;
+
 
 	  }
 	 
-	  footer .the-end ul {
+footer section:last-of-type ul {
 		display: flex;
 		flex-direction: row;
 		margin: 2em 0;
@@ -470,45 +499,35 @@ justify-content: space-between;
 
 	  }
 
-	  footer .the-end li {
+footer section:last-of-type li {
 		border-right: 0.05em solid gray;
 	  }
 
+
 	
-	  .the-end article:nth-of-type(2){
+footer section:last-of-type article:nth-of-type(2){
 		display: flex;
 		flex-direction: row;
-		margin: 2em 0;
+		margin: 1em 0;
 		position: relative;
 	  }
 
-.the-end p {
+
+footer section:last-of-type p {
 	position: absolute;
 	left: -10em;
+	top: 1em;
 }
 
-.the-end img{
+footer section:last-of-type img{
 
 	height: 70%;
 	width: 70%;
 }
 
+footer section:last-of-type span {
+	display:none;
 }
 
 
-
-@media screen and (max-width: 768px) {
-  #menu-icon {
-    display: block;
-  }
-  #menu {
-    position: static;
-    width: 100%;
-    height: auto;
-    background: none;
-    transition: none;
-  }
-  #menu.active {
-    left: -200px;
-  }
 }

@@ -321,7 +321,26 @@ Er is geen dark-mode beschikbaar vanuit de browser en er is ook geen toggle om d
 
 </details>
 
+### Toegankelijkheid les
 
+Ik heb tijdens deze les de website van Josette Derksen getest op toegankelijkheid. En zij de mijne. Dit zijn wat mij het meest opviel tijdens de test:
+
+- Voice Over:
+Wat ging goed?
+-Herkent alle headings, de linkjes in de navigatie en de footer.
+
+Wat ging minder goed?
+-Bij mijn tweede pagina (producten) moet ik nog van de losse producten links maken om te weten dat het klikbaar is.
+
+
+- Kleurenbindheid:
+
+Ervoor zorgen dat elk link op mijn websites een hover state hebben + een andere kleur.
+
+
+- Bij gebruik van de toegangkelijkhgeid-bril:
+
+Het viel mij op dat als ik de wazige bril gebruik dat de cursor niet duidelijk is. Ik besefte daardoor hoe belangrijk de grootte is van de cursor is het geval dat iemand bijvoorbeeld zijn bril niet bij zich heeft.
 
 
 
