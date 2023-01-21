@@ -1,0 +1,225 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+
+@font-face {
+	font-family: Futura Pasatta;
+	src: url('../fonts/futurapassata-bold.woff2');
+  }
+  @font-face {
+	font-family: Grota sans;
+	src: url('../fonts/grotasans-regular.woff2');
+  }
+
+*, *::after, *::before {
+  box-sizing:border-box;
+  text-decoration: none;  
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+button, summary {
+	cursor: pointer;
+}
+
+
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+
+:root {
+	--color-text:#111;
+	--color-background:#eee;
+	--footer-background-color: #78b433;
+	--footer-text-color: #2f3539;
+	--campina-green: #78b433;
+	--button-background-color: #dcf8ad;
+	--product-box-border: rgba(0,0,0,0.15);
+	--product-box-hover: rgba(0,0,0,0.3);
+	--product-supermarket-hover: lightyellow;
+	--page-title-color: #333;
+}
+  
+/****************/
+/* MIJN STYLING */
+/****************/
+
+#menu {
+  position: absolute;
+  top: 50px;
+  left: -200px;
+  width: 200px;
+  height: 100%;
+  background: white;
+  transition: left 0.5s;
+}
+
+#menu.active {
+  left: 0;
+}
+
+#menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#menu li {
+  border-bottom: 1px solid #ccc;
+}
+
+#menu a {
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+main > h3 {
+  font-family: Futura Pasatta;
+  font-size: 4em;
+  color: #2b2929;
+  display: flex;
+  justify-content: center;
+  margin: 0.5em 0.1em 0.2em 0.1em;
+}
+
+main > ul:first-of-type {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0.5em;
+  margin: 0em;
+}
+
+main > ul:first-of-type li {
+  margin: 0.5em;
+  padding: 0.5em 1em;
+  font-family: Grota sans;
+  font-size: larger;
+  color: var(--campina-green);
+  border: 0.1em solid var(--campina-green);
+  border-radius: 5em;
+  transition: 0.2s;
+}
+
+main > ul:first-of-type li:hover {
+  margin: 0.5em;
+  padding: 0.5em 1em;
+  font-family: Grota sans;
+  font-size: larger;
+  font-weight: bolder;
+  color: green;
+  background-color: #e9f7c3;
+  border: 0.1em solid green;
+  border-radius: 5em;
+}
+
+main section:nth-of-type(1) > ul {
+  margin:0;
+  padding:0;
+  list-style:none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* pak melk container */
+main section:nth-of-type(1) > ul > li {
+	display:grid;
+	overflow:hidden;
+	box-shadow: 0 1px 2px var(--product-box-border);
+	transition: box-shadow 0.3s ease-in-out;
+  	margin: 2em;
+}
+
+main section:nth-of-type(1) > ul > li:hover {
+	display:grid;
+	overflow:hidden;
+	box-shadow: 0 5px 15px var(--product-box-hover);
+  	margin: 2em;
+}
+
+/* pak melk titel  */
+main section:nth-of-type(1) > ul > li > h3 {
+	position:relative;
+	z-index:100;
+	grid-column-start:1;
+	grid-row-start:1;
+	font-family: Futura Pasatta;
+    color: #78b433;
+	align-self:end;
+	
+	margin:0;
+	padding: 2em 1em 3em 1em;
+	
+	text-align:center;
+	border-radius: 40% 60% 0 0 / 40% 55% 0 0;
+	transform:translateY(1.5em);
+	transition:.5s;
+}
+
+main section:nth-of-type(1) > ul > li:hover > h3 {
+	transform:translateY(0em);
+	background-color: var(--product-supermarket-hover);
+    color: orange;
+}
+
+/* pak melk plaatje */
+main section:nth-of-type(1) > ul > li > img{
+	width:100%;
+	grid-column-start:1;
+	grid-row-start:1;
+	transform: scale(.7);
+	transition-duration: .3s;
+	transition-delay: .1s;
+
+}
+
+
+main section:nth-of-type(1) > ul > li:hover > img{
+	transform: scale(0.8);
+}
+	
+/* merken links */
+main section:nth-of-type(1) > ul ul {
+	position:relative;
+	z-index:200;
+	margin:0;
+	padding:0;
+	list-style:none;
+	
+	display:flex;
+	gap:.5em;
+	justify-content:center;
+	align-items: center;
+	
+	grid-column-start:1;
+	grid-row-start:1;
+	
+	align-self:end;
+	padding:1em;
+	
+	transform:translateY(3em);
+	transition:.5s;
+}
+
+main section:nth-of-type(1) > ul > li:hover ul {
+	transform:translateY(0);
+	transition-delay:.2s;
+}
+
+main section:nth-of-type(1) > ul ul img {
+	height:.8em;
+	display:block;
+}
+
+main section:nth-of-type(1) > ul ul li:nth-of-type(2) img{
+	height:1.5em;
+	
+}
+
+

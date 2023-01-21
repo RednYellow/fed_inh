@@ -1,7 +1,6 @@
 /**************/
 /* CSS REMEDY */
 /**************/
-/* @import url('https://fonts.cdnfonts.com/css/grota-sans-alt'); */
 
 @font-face {
 	font-family: Futura Pasatta;
@@ -25,42 +24,47 @@ button, summary {
 }
 
 
-
-
-
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
+
 :root {
-	/* startje */
 	--color-text:#111;
+    --essential-white: #fff;
 	--color-background:#eee;
 	--footer-background-color: #78b433;
 	--footer-text-color: #2f3539;
+	--campina-green: #78b433;
+	--button-background-color: #dcf8ad;
+	--product-box-border: rgba(0,0,0,0.15);
+	--product-box-hover: rgba(0,0,0,0.3);
+	--product-supermarket-hover: lightyellow;
+	--page-title-color: #333;
+    --top-page-background: darkorange;
+    --nav-hover: rgb(22, 104, 22);
+
 }
 
 
-
-
-
 /****************/
-/* JOUW STYLING */
+/* MIJN STYLING */
 /****************/
+
+/* Header, #top-page: geldig voor zowel de home pagina als de producten pagina */
 
 body {
 	position: relative;
 }
 
-
-header section{
+#top-page {
 	background-color: var(--footer-background-color);
 	width: 100%;
 	padding: 1.5em;
 	position: relative;
 }
 
-header section button {
-	background-color: darkorange;
+#top-page button {
+	background-color: var(--top-page-background);
 	padding: 0.7em;
 	margin: 0.2em;
 	border-radius: 5em;
@@ -68,10 +72,10 @@ header section button {
 	position: absolute;
 	right: 2em;
 	top: 0.3em;
-	color: white;
+	color: var(--essential-white);
 	font-family: Arial , Helvetica, sans-serif;
 	font-weight: 700;
-	text-shadow: #111;
+	text-shadow: var(--color-text);
 }
 
 header {
@@ -82,18 +86,18 @@ header {
 	margin: 0;
 	position: sticky;
 	top: 0em;
-	background-color: white;
+	background-color: var(--essential-white);
   }
 
-  #top-page {
+header section{
 	background-color: var(--footer-background-color);
 	width: 100%;
 	padding: 1.5em;
 	position: relative;
 }
 
-#top-page button {
-	background-color: darkorange;
+header section button {
+	background-color: var(--top-page-background);
 	padding: 0.7em;
 	margin: 0.2em;
 	border-radius: 5em;
@@ -101,10 +105,10 @@ header {
 	position: absolute;
 	right: 2em;
 	top: 0.3em;
-	color: white;
+	color: var(--essential-white);
 	font-family: Arial , Helvetica, sans-serif;
 	font-weight: 700;
-	text-shadow: #111;
+	text-shadow: var(--color-text);
 }
   
   header img:first-of-type {
@@ -112,174 +116,168 @@ header {
 	height: 6em;
   }
   
-  nav ul {
+  header nav ul {
     display: flex;
     list-style: none;
   }
   
-  nav ul li a {
+  header nav ul li a {
     padding: 1em;
     text-decoration: none;
-    color: #333;
+    color: var(--footer-text-color);
 	text-transform: uppercase;
 	font-family: Futura Pasatta, Arial, Helvetica, sans-serif;
 	transition: .2s;
 	font-size: large;
   }
 
-  nav ul li a:hover {
+  header nav ul li a:hover {
     padding: 1em;
     text-decoration: none;
-    color: rgb(22, 104, 22);
+    color: var(--nav-hover);
 	font-family: Futura Pasatta, Arial, Helvetica, sans-serif;
 	text-transform: uppercase;
 	text-decoration: underline;
   }
+
+  header nav ul li a:active {
+	color: red;
+  }
   
-  form {
+  header form {
     display: flex;
     align-items: center;
   }
   
-  form input {
+  header form input {
     padding: 0.6em 1em;
     border-radius: .5em;
-    border: gray solid 0.1em;
+    border: var(--page-title-color) solid 0.1em;
     outline: none;
 	font-family: Futura Pasatta;
   }
-
-  
-
-  /* .search-container form{
-	display: flex;
-	justify-content: space-between;
-	flex-direction: row;
-  }
-  
-  .search-container input[type=text] {
-	padding: 6px 16px;
-	margin-left: 8px;
-	font-size: 17px;
-	font-family: Grota sans;
-	border: none;
-	width: 100%;
-  }
-  
-  .search-container button[type=submit] {
-	padding: 6px 10px;
-	margin-left: 30px;
-	background: #ddd;
-	font-size: 17px;
-	border: none;
-	cursor: pointer;
-  }
-  
-  .search-container button[type=submit]:hover {
-	background: #ccc;
-  }
-  
-  .search-container .fa-search {
-	font-size: 20px;
-	margin-right: 8px;
-  } */
-  
-
   
   /* Header - Mobile */
 
   @media screen and (max-width: 62em) {
-    /* hide the nav menu and show the hamburger menu icon */
-    nav ul {
-      display: none;
-    }
-    .hamburger-menu {
-      display: block;
-    }
-    /* center the logo and search form */
-    .logo, form {
-      display: block;
-      text-align: center;
-    }
-    /* adjust the padding for smaller screens */
+
+    /* De ruimte aanpassen tussen de elemeten for smaller screens */
     header {
-      padding: 1em;
-	  display: flex;
-	  justify-content: space-between;
+        padding: 1em;
+	    display: flex;
+	    justify-content: space-between;
     }
 
-
-    nav ul.open {
-        display: flex;
-    }
-
-	form {
+	header form {
 		display: none;
 	}
 
 	header nav div {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
 		width: 2em;
 		height: 2em;
 		padding: 2em;
-		border: #111 solid;
-		background-color:  var(--footer-background-color);
 		border-radius: 5em;
+
 	}
 
+	header nav div span {
+		padding: .1em 1em;
+		margin: 0.2em;
+		background-color: var(--color-text);
+		border-radius: 5em;
+		transition: 0.1s;
+	}
 
+/* De navigatie verbergen om de hamburger menu te laten verschijnen */
 
+	header nav ul {
+		display: none;
+		padding: 0;
+		margin: 0;
+		list-style: none;
+	  }
+
+	  body.active {
+		position: relative;
+	  }
+
+	  nav.active ul {
+		display: flex;
+		flex-direction: column;
+		align-items: left;
+		position: absolute;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		padding-top: 8em;
+		margin: 0;
+		width: 25em;
+		height: 100vh;
+		background-color: var(--essential-white);
+		animation: slide-right 0.5s ease-out;
+	  }
+
+	  nav.active ul li {
+		padding:1em;
+		border-bottom:  0.05em solid var(--footer-text-color);
+		transition: 0.2s;
+		/* box-shadow: 0px 0px 5px #ccc; */
+	  }
+
+	  nav.active ul li:first-of-type {
+		padding:1em;
+		border-top:  0.05em solid var(--footer-text-color);
+		border-bottom:  0.05em solid var(--footer-text-color);
+		transition: 0.2s;
+		/* box-shadow: 0px 0px 5px #ccc; */
+	  }
+
+	  nav.active ul li a {
+		color: var(--color-text);
+		text-decoration: none;
+	  }
+
+	  nav.active ul li a:hover {
+	  color: var(--footer-background-color);
+	  }
+
+	  nav.active div {
+		position: relative;
+		z-index: 300;
+	  }
+
+	  nav.active div span:nth-of-type(2){
+		display: none;
+	  }
+
+	  nav.active div span:nth-of-type(1){
+		transform: rotate(45deg);
+		position: absolute;
+		bottom: 50%;
+	  }
+
+	  nav.active div span:nth-of-type(3){
+		transform: rotate(-45deg);
+		position: absolute;
+		bottom: 50%;
+	  }
+
+	  @keyframes slide-right {
+		from { transform: translateX(200%); }
+		to { transform: translateX(0); }
+	  }
 
   }
 
 
-main img:nth-of-type(1){
-width:100%;
-height:auto;
-}
-
-main section {
-	display:flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-}
-
-
-main section iframe {
-	margin: 1em;
-}
-
-main section a {
-	overflow: hidden;
-	margin: 1em;
-	max-width: 35em;
-}
-
-/* Main - homepage (te veel code) */
-
-/* main section{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-}
-
-main section {
-	margin: 2em;
-}
-
-main iframe {
-	max-width: 70%;
-}
-
-main a {
-	margin: 2em;
-} */
 
 
 
-
-/* main - homepage (minder code) */
-
+/* Footer. Geldig voor zowel de home pagina als de producten pagina */
 
 footer {
 	display: flex;
@@ -302,9 +300,9 @@ footer h3 {
 }
 
 footer section ul{
-font-size: 1.1em;
-padding: 0 1em;
-font-family: Grota sans;
+	font-size: 1.1em;
+	padding: 0 1em;
+	font-family: Grota sans;
 
 }
 
@@ -333,7 +331,7 @@ footer section p {
 }
 
 footer a li:focus {
-	background-color: darkorange;
+	background-color: var(--top-page-background);
 }
 
 footer a li:active {
@@ -343,7 +341,7 @@ footer a li:active {
 
 footer section:last-of-type {
 	width: 100%;
-	background-color: white;
+	background-color: var(--essential-white);
 	display:flex;
 	flex-direction: column;
 	align-items: center;
@@ -351,18 +349,26 @@ footer section:last-of-type {
 
 
 footer section:last-of-type article:nth-of-type(1){
-margin: 1em 0;
-padding: 1em 0;
-align-self: flex-start;
+	margin: 1em 0;
+	padding: 1em 0;
+	align-self: flex-start;
+}
 
+footer section:nth-of-type(4) ul:first-of-type > a > li:first-of-type {
+    text-decoration: underline;
+}
+
+footer section:nth-of-type(4) > p:nth-of-type(2) > a {
+    color: var(--footer-text-color);
+    text-decoration: underline;
 }
 
 
 footer section:last-of-type span {
 	margin: 0 0 1em 0;
-	background-color: gray;
+	background-color: var(--page-title-color);
 	width: 92%;
-	height: 0.08em;
+	height: 0.06em;
 }
 
 footer section:last-of-type article:nth-of-type(2){
@@ -375,55 +381,46 @@ footer section:last-of-type article:nth-of-type(2){
 
 
 footer section:last-of-type img{
-
-	height: 70%;
-	width: 70%;
+	height: 60%;
+	width: 60%;
 }
 
 
- @media (min-width: 62em) {
+/* Footer - Mobile */
 
-	footer .grid-container {
-		display: grid;
-		grid-template-columns: repeat(4, 1fr);
-		width: 100%;
-	  }
+@media (min-width: 62em) {
 
+footer .grid-container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	width: 100%;
+}
 
-
-	  	
-	  footer section:last-of-type {
-width: 100%;
-background-color: white;
-display:flex;
-flex-direction: row;
-justify-content: space-between;
-
-
-	  }
+footer section:last-of-type {
+	width: 100%;
+	background-color: var(--essential-white);
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
 	 
 footer section:last-of-type ul {
-		display: flex;
-		flex-direction: row;
-		margin: 2em 0;
-		padding: 0 3em;
-	
-
-	  }
+	display: flex;
+	flex-direction: row;
+	margin: 2em 0;
+	padding: 0 3em;
+}
 
 footer section:last-of-type li {
-		border-right: 0.05em solid gray;
-	  }
+	border-right: 0.05em solid var(--page-title-color);
+}
 
-
-	
 footer section:last-of-type article:nth-of-type(2){
-		display: flex;
-		flex-direction: row;
-		margin: 1em 0;
-		position: relative;
-	  }
-
+	display: flex;
+	flex-direction: row;
+	margin: 1em 0;
+	position: relative;
+}
 
 footer section:last-of-type p {
 	position: absolute;
@@ -432,9 +429,8 @@ footer section:last-of-type p {
 }
 
 footer section:last-of-type img{
-
-	height: 70%;
-	width: 70%;
+	height: 60%;
+	width: 80%;
 }
 
 footer section:last-of-type span {

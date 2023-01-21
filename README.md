@@ -235,31 +235,24 @@ Er is geen dark-mode beschikbaar vanuit de browser en er is ook geen toggle om d
 <details>
   <summary>uitwerken na test in 8e werkgroep</summary>
 
-  ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+Ik heb tijdens deze les de website van Josette Derksen getest op toegankelijkheid. En zij de mijne. Dit zijn wat mij het meest opviel tijdens de test:
 
-  #### Screenreader
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+- Voice Over:
+Wat ging goed?
+-Herkent alle headings, de linkjes in de navigatie en de footer.
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
-
-  #### Muis en Toetsenbord 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+Wat ging minder goed?
+-Bij mijn tweede pagina (producten) moet ik nog van de losse producten links maken om te weten dat het klikbaar is.
 
 
-  #### Motoriek (shocks, elastiekjes)
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+- Kleurenbindheid:
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+Ervoor zorgen dat elk link op mijn websites een hover state hebben + een andere kleur.
 
 
-  #### Visueel (brillen, contrast, kleurenblind, dark/light). 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+- Bij gebruik van de toegangkelijkhgeid-bril:
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+Het viel mij op dat als ik de wazige bril gebruik dat de cursor niet duidelijk is. Ik besefte daardoor hoe belangrijk de grootte is van de cursor is het geval dat iemand bijvoorbeeld zijn bril niet bij zich heeft.
 
 </details>
 
@@ -321,27 +314,13 @@ Er is geen dark-mode beschikbaar vanuit de browser en er is ook geen toggle om d
 
 </details>
 
-### Toegankelijkheid les
+### Minder goede code:
 
-Ik heb tijdens deze les de website van Josette Derksen getest op toegankelijkheid. En zij de mijne. Dit zijn wat mij het meest opviel tijdens de test:
+<img src="readme-images/main.niet.accuraat.png" width="375px" alt="uitomst opdracht 1">
 
-- Voice Over:
-Wat ging goed?
--Herkent alle headings, de linkjes in de navigatie en de footer.
+<img src="readme-images/nav.positionering.poging.png" width="375px" alt="uitomst opdracht 1">
 
-Wat ging minder goed?
--Bij mijn tweede pagina (producten) moet ik nog van de losse producten links maken om te weten dat het klikbaar is.
-
-
-- Kleurenbindheid:
-
-Ervoor zorgen dat elk link op mijn websites een hover state hebben + een andere kleur.
-
-
-- Bij gebruik van de toegangkelijkhgeid-bril:
-
-Het viel mij op dat als ik de wazige bril gebruik dat de cursor niet duidelijk is. Ik besefte daardoor hoe belangrijk de grootte is van de cursor is het geval dat iemand bijvoorbeeld zijn bril niet bij zich heeft.
-
+<img src="readme-images/hamburgermenu.poging.png" width="375px" alt="uitomst opdracht 1">
 
 
 ## Eindgesprek (week 5)
