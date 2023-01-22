@@ -8,8 +8,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
 
-
-
 ## Jij
 
 <details open>
@@ -36,14 +34,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
+  https://rednyellow.github.io/fed_inh/
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
+  Campina.nl - Home pagina. 
   <img src="readme-images/ss-home.jpg" width="375px" alt="omschrijving van de pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
+  Campina.nl - Producten pagina. 
   <img src="readme-images/ss-producten.jpg" width="375px" alt="omschrijving van de pagina">
  
 </details>
@@ -147,13 +145,13 @@ Er is geen dark-mode beschikbaar vanuit de browser en er is ook geen toggle om d
   <summary>uitwerken na afloop 2e werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdown.png" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/javascript.menu.png" width="375px" alt="breakdown van een dynamisch deel">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/producten-hover.png" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
@@ -203,7 +201,7 @@ Er is geen dark-mode beschikbaar vanuit de browser en er is ook geen toggle om d
   <summary>uitwerken voor 2e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Dit keer heb ik meegedaan met een andere groepje dan mijn standaard groepje. 
 
 
   ### Agenda voor meeting
@@ -286,7 +284,7 @@ Het viel mij op dat als ik de wazige bril gebruik dat de cursor niet duidelijk i
   | Melvin
     - 
   
-  
+
   
   | Diem
     - Hamburger menu 
@@ -323,6 +321,15 @@ Het viel mij op dat als ik de wazige bril gebruik dat de cursor niet duidelijk i
 <img src="readme-images/hamburgermenu.poging.png" width="375px" alt="uitomst opdracht 1">
 
 
+### Stukje proces:
+
+<img src="readme-images/hamburgermenu-fa-styling.png" width="375px" alt="uitomst opdracht 1">
+
+<img src="readme-images/hamburger-fa-html.png" width="375px" alt="uitomst opdracht 1">
+
+<img src="readme-images/class-niet-nodig.png" width="375px" alt="uitomst opdracht 1">
+
+
 ## Eindgesprek (week 5)
 
 <details>
@@ -333,20 +340,20 @@ Het viel mij op dat als ik de wazige bril gebruik dat de cursor niet duidelijk i
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  Met behulp van een oefening van de JS week heb ik een opzetje kunnen hebben voor mijn uitklapbare menu met een "hamburger menu".
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  Wat ik het meest heb geleerd is dat het durven te experimenteren met verschillende manieren code te schrijven en kijken naar de live veranderingen op de website. Zo leerde ik onbuwest hoe CSS en JS in elkaar zit (vooral in praktijk).
+
+  Het stres gevoel aan het begin van dit vak wanneer het mis gaat met mijn code is ook veel minder geworden, en dat kwam zeer waarchijnlijk door veel te oefenen, door blijven proberen en de fouten(errors) te accepteren en proberen te corrigeren.
+
+  <img src="readme-images/javascript-menu.png" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  Ik vond het lastig om een uitklapbare lijst te maken dat verschijnt wanneer ik hover op de nav > ul elementen:
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="readme-images/minder-goed.png" width="375px" alt="bummer">
 </details>
-
-
-
-
 
 ## Bronnenlijst
 
@@ -355,8 +362,9 @@ Het viel mij op dat als ik de wazige bril gebruik dat de cursor niet duidelijk i
 
   Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. https://developer.mozilla.org/en-US/docs/Web/CSS/height
+  2. https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+  3. https://cssgridgarden.com/
+  4. https://codepen.io/shooft/pen/GRGVdmw
 
 </details>

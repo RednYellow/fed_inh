@@ -50,7 +50,7 @@ button, summary {
 /* MIJN STYLING */
 /****************/
 
-/* Header, #top-page: geldig voor zowel de home pagina als de producten pagina */
+/* Header, #top-page (Home & Producten pagina) */
 
 body {
 	position: relative;
@@ -181,7 +181,6 @@ header section button {
 		height: 2em;
 		padding: 2em;
 		border-radius: 5em;
-
 	}
 
 	header nav div span {
@@ -190,9 +189,11 @@ header section button {
 		background-color: var(--color-text);
 		border-radius: 5em;
 		transition: 0.1s;
-	}
+	
+      }
 
-/* De navigatie verbergen om de hamburger menu te laten verschijnen */
+
+    /* De navigatie verbergen om de hamburger menu te laten verschijnen */
 
 	header nav ul {
 		display: none;
@@ -277,7 +278,7 @@ header section button {
 
 
 
-/* Footer. Geldig voor zowel de home pagina als de producten pagina */
+/* Footer (Home & Producten pagina)
 
 footer {
 	display: flex;

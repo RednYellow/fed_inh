@@ -2,8 +2,8 @@
 /* MAIN */
 
 main img:nth-of-type(1){
-width:100%;
-height:auto;
+	width:100%;
+	height:auto;
 }
 
 main section {
@@ -20,5 +20,6 @@ main section iframe {
 main section a {
 	overflow: hidden;
 	margin: 2em;
-	max-width: 35em; /*zo heb ik ervoor gezorgd dat deze child (bijna) even groot is als de andere child (iframe) binnen de parent (section). */
+	 /*zo heb ik ervoor gezorgd dat deze child (bijna) even groot is als de andere child (iframe) binnen de parent (section). */
+	max-width: 35em;
 }
