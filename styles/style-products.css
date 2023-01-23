@@ -31,6 +31,7 @@ button, summary {
 
 :root {
 	--color-text:#111;
+    --essential-white: #fff;
 	--color-background:#eee;
 	--footer-background-color: #78b433;
 	--footer-text-color: #2f3539;
@@ -40,47 +41,20 @@ button, summary {
 	--product-box-hover: rgba(0,0,0,0.3);
 	--product-supermarket-hover: lightyellow;
 	--page-title-color: #333;
+    --top-page-background: darkorange;
+    --nav-hover: rgb(22, 104, 22);
 }
   
 /****************/
 /* MIJN STYLING */
 /****************/
 
-#menu {
-  position: absolute;
-  top: 50px;
-  left: -200px;
-  width: 200px;
-  height: 100%;
-  background: white;
-  transition: left 0.5s;
-}
 
-#menu.active {
-  left: 0;
-}
-
-#menu ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-#menu li {
-  border-bottom: 1px solid #ccc;
-}
-
-#menu a {
-  display: block;
-  padding: 20px;
-  text-decoration: none;
-  color: black;
-}
 
 main > h3 {
   font-family: Futura Pasatta;
   font-size: 4em;
-  color: #2b2929;
+  color: var(--footer-text-color);
   display: flex;
   justify-content: center;
   margin: 0.5em 0.1em 0.2em 0.1em;
@@ -112,9 +86,9 @@ main > ul:first-of-type li:hover {
   font-family: Grota sans;
   font-size: larger;
   font-weight: bolder;
-  color: green;
-  background-color: #e9f7c3;
-  border: 0.1em solid green;
+  color: var(--nav-hover);
+  background-color: var(--button-background-color);
+  border: 0.1em solid var(--nav-hover);
   border-radius: 5em;
 }
 
@@ -150,7 +124,7 @@ main section:nth-of-type(1) > ul > li > h3 {
 	grid-column-start:1;
 	grid-row-start:1;
 	font-family: Futura Pasatta;
-    color: #78b433;
+    color: var(--footer-background-color);
 	align-self:end;
 	
 	margin:0;
@@ -165,7 +139,7 @@ main section:nth-of-type(1) > ul > li > h3 {
 main section:nth-of-type(1) > ul > li:hover > h3 {
 	transform:translateY(0em);
 	background-color: var(--product-supermarket-hover);
-    color: orange;
+    color: var(--top-page-background);
 }
 
 /* pak melk plaatje */
@@ -179,6 +153,9 @@ main section:nth-of-type(1) > ul > li > img{
 
 }
 
+main section:nth-of-type(1) > ul > li:hover {
+	cursor: pointer;
+}
 
 main section:nth-of-type(1) > ul > li:hover > img{
 	transform: scale(0.8);
@@ -217,7 +194,7 @@ main section:nth-of-type(1) > ul ul img {
 	display:block;
 }
 
-main section:nth-of-type(1) > ul ul li:nth-of-type(2) img{
+main section:nth-of-type(1) > ul ul a:nth-of-type(2) img{
 	height:1.5em;
 	
 }

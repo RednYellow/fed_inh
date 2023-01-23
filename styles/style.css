@@ -50,11 +50,13 @@ button, summary {
 /* MIJN STYLING */
 /****************/
 
-/* Header, #top-page (Home & Producten pagina) */
+
 
 body {
 	position: relative;
+	
 }
+
 
 #top-page {
 	background-color: var(--footer-background-color);
@@ -78,6 +80,9 @@ body {
 	text-shadow: var(--color-text);
 }
 
+
+/* Header, #top-page (Home & Producten pagina) */
+
 header {
     display: flex;
     justify-content: space-around;
@@ -87,6 +92,7 @@ header {
 	position: sticky;
 	top: 0em;
 	background-color: var(--essential-white);
+	z-index: 500;
   }
 
 header section{
@@ -278,7 +284,7 @@ header section button {
 
 
 
-/* Footer (Home & Producten pagina)
+/* Footer - (Home & Producten pagina)*/
 
 footer {
 	display: flex;

@@ -323,11 +323,40 @@ Het viel mij op dat als ik de wazige bril gebruik dat de cursor niet duidelijk i
 
 ### Stukje proces:
 
+Doormiddel van een externe bron (zie bronnenlijst: 7.) heb ik niet duidelijk kunnen zien hoe ik het hamburger icoontje moet krijgen zoals ik wens.
+
+Achteraf heb ik besloten om <div>s te gebruiken en zelfs te spelen met CSS tot het hamburger de gewenste vorm krijgt.
+
+fontawesome.nl code dat ik had gebruikt:
+
 <img src="readme-images/hamburgermenu-fa-styling.png" width="375px" alt="uitomst opdracht 1">
 
 <img src="readme-images/hamburger-fa-html.png" width="375px" alt="uitomst opdracht 1">
 
+
+Aan het begin vond ik het moeilijk om zonder .class en #id te coderen. Maar door het oefenen heb ik meer begrip kunnen krijgen hoe het ook zonder kan. En het gaf mij een beter overzicht over mijn gehele code.
+
+Onnodige classes:
+
 <img src="readme-images/class-niet-nodig.png" width="375px" alt="uitomst opdracht 1">
+
+### Producten pagina stuktuur + aanpassing
+
+Mijn code (geen hover): 
+
+<img src="readme-images/code-red.png" width="375px" alt="uitomst opdracht 1">
+
+Feedback sanne:
+
+<img src="readme-images/code-sanne.png" width="375px" alt="uitomst opdracht 1">
+
+Verwerking:
+
+<img src="readme-images/code-red-sanne.png" width="375px" alt="uitomst opdracht 1">
+
+Resultaat:
+
+<img src="readme-images/producten-uitkomst.png" width="375px" alt="uitomst opdracht 1">
 
 
 ## Eindgesprek (week 5)
@@ -364,7 +393,10 @@ Het viel mij op dat als ik de wazige bril gebruik dat de cursor niet duidelijk i
 
   1. https://developer.mozilla.org/en-US/docs/Web/CSS/height
   2. https://css-tricks.com/snippets/css/a-guide-to-flexbox/
-  3. https://cssgridgarden.com/
-  4. https://codepen.io/shooft/pen/GRGVdmw
+  3. https://codepen.io/shooft/pen/GRGVdmw
+  4. https://cssgridgarden.com/
+  5. https://codepen.io/shooft/pen/bGjWZmw
+  6. https://www.w3schools.com/howto/howto_js_toggle_dark_mode.asp
+  7. https://fontawesome.com/v5/icons/hamburger?style=solid&s=solid&f=classic
 
 </details>
