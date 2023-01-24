@@ -81,7 +81,7 @@ body {
 }
 
 
-/* Header, #top-page (Home & Producten pagina) */
+/* Header - (Home & Producten pagina) */
 
 header {
     display: flex;
@@ -224,7 +224,7 @@ header section button {
 		margin: 0;
 		width: 25em;
 		height: 100vh;
-		background-color: var(--essential-white);
+		background-color: var(--color-background);
 		animation: slide-right 0.5s ease-out;
 	  }
 
@@ -361,6 +361,44 @@ footer section:last-of-type article:nth-of-type(1){
 	align-self: flex-start;
 }
 
+footer section:nth-of-type(4) ul:nth-of-type(2) {
+	display: flex;
+	flex-direction: row;
+}
+
+/* All font awesome icons styling*/
+.fa {
+	padding: 1em 2em;
+	margin: .1em;
+	font-size: 2em;
+	width: 2em;
+	height: 4em;
+	text-align: center;
+	text-decoration: none;
+	scale: 1.5;
+  }
+  
+
+
+  
+  /* Facebook */
+  .fa-instagram {
+	color: var(--essential-white);
+  }
+  
+  /* Instagram */
+  .fa-facebook {
+
+	color: var(--essential-white);
+  }
+
+  /* YouTube */
+  .fa-youtube {
+	color: var(--essential-white);
+  }
+
+
+
 footer section:nth-of-type(4) ul:first-of-type > a > li:first-of-type {
     text-decoration: underline;
 }
@@ -446,3 +484,122 @@ footer section:last-of-type span {
 
 
 } 
+
+
+
+
+
+
+/* DARK - MODE */
+
+body.lightswitch {
+background-color: #111;
+
+
+}
+
+
+
+
+header.lightswitch {
+	background-color: var(--color-text);
+
+
+}
+
+header.lightswitch nav ul {
+	background-color: var(--color-text);
+}
+
+header.lightswitch nav ul li a {
+    color: var(--essential-white);
+
+  }
+
+  header.lightswitch nav ul li a:hover {
+    color: var(--top-page-background);
+
+  }
+
+
+
+  @media screen and (max-width: 62em) {
+
+   header.lightswitch nav div span {
+		background-color: var(--essential-white);
+      }
+
+	header.lightswitch nav.active {
+		background-color: var(--color-text);
+	}
+
+	 header.lightswitch nav.active ul {
+		background-color: var(--footer-text-color);	
+	  }
+
+	  header.lightswitch nav.active ul li {
+		border-bottom:  0.05em solid var(--essential-white);
+		
+	  }
+
+	  header.lightswitch nav.active ul li:first-of-type {
+
+		border-top:  0.05em solid var(--essential-white);
+		border-bottom:  0.05em solid var(--essential-white);
+
+	  }
+
+	  header.lightswitch nav.active ul li a {
+		color: var(--essential-white);
+	  }
+
+	  header.lightswitch nav.active ul li a:hover {
+	  color: var(--top-page-background);
+	  }
+	  
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+main.lightswitch {
+	background-color: #111;
+
+
+
+}
+
+
+footer.lightswitch {
+	background-color: var(--product-box-border);
+	
+}
+
+footer.lightswitch section:last-of-type{
+background-color: var(--color-text);
+color: var(--essential-white);
+
+}
+
+footer.lightswitch section article ul li {
+	color: var(--essential-white);
+	border-right: 0.05em solid var(--essential-white);
+
+}
+
+footer.lightswitch section article:nth-of-type(2) > p {
+	color: var(--essential-white);
+}

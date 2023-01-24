@@ -57,7 +57,8 @@ main > h3 {
   color: var(--footer-text-color);
   display: flex;
   justify-content: center;
-  margin: 0.5em 0.1em 0.2em 0.1em;
+  margin: 0 0.1em 0.2em 0.1em;
+  padding-top: 0.5em;
 }
 
 main > ul:first-of-type {
@@ -198,5 +199,42 @@ main section:nth-of-type(1) > ul ul a:nth-of-type(2) img{
 	height:1.5em;
 	
 }
+
+
+/* DARK MODE */
+
+main.lightswitch h3 {
+color: var(--essential-white);
+}
+  
+main.lightswitch > ul:first-of-type li:hover {
+	color: var(--essential-white);
+	background-color: var(--color-text);
+	border: 0.1em solid var(--essential-white);
+  }
+
+
+/* Producten */
+
+main.lightswitch section:nth-of-type(1) > ul > li {
+	box-shadow: 0 1px 2px var(--product-box-border);
+
+}
+
+main.lightswitch section:nth-of-type(1) > ul > li:hover {
+	box-shadow: 0 5px 15px var(--campina-green);
+}
+
+
+main.lightswitch section:nth-of-type(1) > ul > li > h3 {
+    color: var(--footer-background-color);
+	
+}
+
+main.lightswitch section:nth-of-type(1) > ul > li:hover > h3 {
+	background-color: var(--page-title-color);
+    color: var(--top-page-background);
+}
+
 
 

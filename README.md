@@ -145,6 +145,9 @@ Er is geen dark-mode beschikbaar vanuit de browser en er is ook geen toggle om d
   <summary>uitwerken na afloop 2e werkgroep</summary>
 
   ### de hele pagina: 
+ 
+  <img src="readme-images/breakdown-top.png" width="375px" alt="breakdown van de hele pagina">
+
   <img src="readme-images/breakdown.png" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
@@ -202,7 +205,7 @@ Er is geen dark-mode beschikbaar vanuit de browser en er is ook geen toggle om d
 
   ### Stand van zaken
   Dit keer heb ik meegedaan met een andere groepje dan mijn standaard groepje. 
-
+  De link naar de meeting agenda: https://docs.google.com/document/d/1aqZe-DUAqvSee4A9Opj1aBHQkbqq7pD3AamzT21R-58/
 
   ### Agenda voor meeting
   samen met je groepje opstellen
@@ -306,7 +309,7 @@ Het viel mij op dat als ik de wazige bril gebruik dat de cursor niet duidelijk i
 
   <img src="readme-images/html.flexbox.poging.producten.png" width="375px" alt="uitomst opdracht 1">
 
-  Nieuwe code:
+  Nieuwe code: 
 
   <img src="readme-images/css.flexbox.poging.producten.png" width="375px" alt="uitomst opdracht 1">
 
@@ -358,6 +361,15 @@ Resultaat:
 
 <img src="readme-images/producten-uitkomst.png" width="375px" alt="uitomst opdracht 1">
 
+### DARK-MODE
+
+De website was aan het begin nog niet geupdate en bevatte deze butten bovenaan.
+
+<img src="readme-images/light.png" width="375px" alt="uitomst opdracht 1">
+
+Toen de website het heeft weg gehaald heb ik besloten om er een dark-mode button van te maken:
+
+<img src="readme-images/dark.png" width="375px" alt="uitomst opdracht 1">
 
 ## Eindgesprek (week 5)
 
