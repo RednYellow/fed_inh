@@ -61,6 +61,8 @@ main > h3 {
   padding-top: 0.5em;
 }
 
+/* De filter menu */
+
 main > ul:first-of-type {
   display: flex;
   flex-direction: row;
@@ -93,6 +95,8 @@ main > ul:first-of-type li:hover {
   border-radius: 5em;
 }
 
+/* Producten container */
+
 main section:nth-of-type(1) > ul {
   margin:0;
   padding:0;
@@ -100,6 +104,7 @@ main section:nth-of-type(1) > ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 /* pak melk container */
@@ -108,14 +113,14 @@ main section:nth-of-type(1) > ul > li {
 	overflow:hidden;
 	box-shadow: 0 1px 2px var(--product-box-border);
 	transition: box-shadow 0.3s ease-in-out;
-  	margin: 2em;
+  	margin: 1em;
 }
 
 main section:nth-of-type(1) > ul > li:hover {
-	display:grid;
-	overflow:hidden;
+	/* display:grid; */
+	/* overflow:hidden; */
 	box-shadow: 0 5px 15px var(--product-box-hover);
-  	margin: 2em;
+  	
 }
 
 /* pak melk titel  */
@@ -162,7 +167,7 @@ main section:nth-of-type(1) > ul > li:hover > img{
 	transform: scale(0.8);
 }
 	
-/* merken links */
+/* Supermarkten links */
 main section:nth-of-type(1) > ul ul {
 	position:relative;
 	z-index:200;
@@ -171,7 +176,7 @@ main section:nth-of-type(1) > ul ul {
 	list-style:none;
 	
 	display:flex;
-	gap:.5em;
+	gap: 1.2em;
 	justify-content:center;
 	align-items: center;
 	
@@ -190,10 +195,21 @@ main section:nth-of-type(1) > ul > li:hover ul {
 	transition-delay:.2s;
 }
 
+/* Supermarkten iconen zelf */
+
 main section:nth-of-type(1) > ul ul img {
 	height:.8em;
 	display:block;
+	transition: .2s;
 }
+
+main section:nth-of-type(1) > ul ul img:hover {
+	height:.8em;
+	display:block;
+	scale:1.2;
+}
+
+/* Albertheijn logo */
 
 main section:nth-of-type(1) > ul ul a:nth-of-type(2) img{
 	height:1.5em;

@@ -53,10 +53,12 @@ button, summary {
 
 
 body {
+	/* voor een "position:sticky;" header. */
 	position: relative;
 	
 }
 
+/* Het groene gedeelte van elk pagina */
 
 #top-page {
 	background-color: var(--footer-background-color);
@@ -78,6 +80,18 @@ body {
 	font-family: Arial , Helvetica, sans-serif;
 	font-weight: 700;
 	text-shadow: var(--color-text);
+	transition: 0.1s;
+}
+
+#top-page button:active {
+	background-color: var(--color-text);
+	border: solid .1em var(--essential-white);
+	color: var(--campina-green);
+}
+
+#top-page button:hover{
+	scale: 1.1;
+	border: .1em solid var(--essential-white);
 }
 
 
@@ -95,14 +109,16 @@ header {
 	z-index: 500;
   }
 
-header section{
+/* Bovenaan #top-page styling */
+ 
+/* header section{
 	background-color: var(--footer-background-color);
 	width: 100%;
 	padding: 1.5em;
 	position: relative;
 }
 
-header section button {
+	header section button {
 	background-color: var(--top-page-background);
 	padding: 0.7em;
 	margin: 0.2em;
@@ -115,11 +131,11 @@ header section button {
 	font-family: Arial , Helvetica, sans-serif;
 	font-weight: 700;
 	text-shadow: var(--color-text);
-}
+} */
   
   header img:first-of-type {
-    width: 6em;
-	height: 6em;
+    width: 5em;
+	height: 5em;
   }
   
   header nav ul {
@@ -147,7 +163,7 @@ header section button {
   }
 
   header nav ul li a:active {
-	color: red;
+	color: var(--top-page-background);
   }
   
   header form {
@@ -178,6 +194,8 @@ header section button {
 		display: none;
 	}
 
+/* Hamburger menu box */
+
 	header nav div {
 		display: flex;
 		align-items: center;
@@ -189,6 +207,8 @@ header section button {
 		border-radius: 5em;
 	}
 
+/* Hamburger menu zelf */
+
 	header nav div span {
 		padding: .1em 1em;
 		margin: 0.2em;
@@ -199,7 +219,7 @@ header section button {
       }
 
 
-    /* De navigatie verbergen om de hamburger menu te laten verschijnen */
+    /* De navigatie verbergen om de slide menu te laten verschijnen */
 
 	header nav ul {
 		display: none;
@@ -257,6 +277,8 @@ header section button {
 		z-index: 300;
 	  }
 
+/* Hamburger icoon laten veranderen naar een kruisje */
+
 	  nav.active div span:nth-of-type(2){
 		display: none;
 	  }
@@ -291,11 +313,13 @@ footer {
 	flex-wrap: wrap;
 	grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
 	background-color: var(--footer-background-color);
+	padding-top: 1em;
 }
 
 footer section{
 	display: block;
 	min-width: 17em;
+	padding-bottom: 1em;
 }
 
 footer h3 {
@@ -337,14 +361,11 @@ footer section p {
 	padding: 0 1.5em;
 }
 
-footer a li:focus {
-	background-color: var(--top-page-background);
-}
 
-footer a li:active {
+/* footer a li:active {
 	color: var(--color-background);
 	font-weight: bold;
-}
+} */
 
 footer section:last-of-type {
 	width: 100%;
@@ -488,14 +509,10 @@ footer section:last-of-type span {
 
 
 
-
-
 /* DARK - MODE */
 
 body.lightswitch {
-background-color: #111;
-
-
+background-color: var(--color-text);
 }
 
 
@@ -521,6 +538,25 @@ header.lightswitch nav ul li a {
 
   }
 
+  /* All font awesome icons styling*/
+ 
+
+  
+  /* Facebook */
+  footer.lightswitch section:nth-of-type(4) ul:nth-of-type(2) .fa-instagram {
+	color: var(--color-text);
+  }
+  
+  /* Instagram */
+  footer.lightswitch section:nth-of-type(4) ul:nth-of-type(2) .fa-facebook {
+
+	color: var(--color-text);
+  }
+
+  /* YouTube */
+  footer.lightswitch section:nth-of-type(4) ul:nth-of-type(2) .fa-youtube {
+	color: var(--color-text);
+  }
 
 
   @media screen and (max-width: 62em) {
@@ -560,33 +596,24 @@ header.lightswitch nav ul li a {
   }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 main.lightswitch {
-	background-color: #111;
-
-
-
+	background-color: var(--color-text);
 }
 
+
+
+
+
+
+
+/* FOOTER - DARKMODE */
 
 footer.lightswitch {
 	background-color: var(--product-box-border);
 	
 }
+
+/* © 2022 | Campina - gedeelte */
 
 footer.lightswitch section:last-of-type{
 background-color: var(--color-text);
@@ -596,7 +623,7 @@ color: var(--essential-white);
 
 footer.lightswitch section article ul li {
 	color: var(--essential-white);
-	border-right: 0.05em solid var(--essential-white);
+	border-right: none;
 
 }
 

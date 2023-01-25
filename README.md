@@ -410,5 +410,6 @@ Toen de website het heeft weg gehaald heb ik besloten om er een dark-mode button
   5. https://codepen.io/shooft/pen/bGjWZmw
   6. https://www.w3schools.com/howto/howto_js_toggle_dark_mode.asp
   7. https://fontawesome.com/v5/icons/hamburger?style=solid&s=solid&f=classic
+  8. https://www.w3schools.com/howto/howto_css_social_media_buttons.asp
 
 </details>
